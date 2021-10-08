@@ -30,7 +30,7 @@ def saveasfile():
 
 def browseFiles():
     global filename
-    filename = filedialog.askopenfilename(initialdir = "/", title = "Select a File", filetypes = (("Devin Text File", "*.dtf*"), ("Text files", "*.txt*"), ("all files", "*.*")))
+    filename = filedialog.askopenfilename(initialdir = "/", title = "Select a File", filetypes = (("Text files", "*.txt*"), ("all files", "*.*")))
 
 def openfromfile():
     global filename
@@ -143,8 +143,6 @@ window = Tk()
 window.geometry()
 window.config(bg = color1)
 window.title("T editor")
-photo1 = PhotoImage(file = "Z:\\Python scripts\\tkinter\\T editor\\logo.dpf")
-window.iconphoto(False, photo1)
 
 title = Label(window, text = "T editor")
 title.pack(expand = True)
